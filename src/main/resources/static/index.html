@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email AI Reply Generator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+    <h1>Email AI Reply Generator</h1>
+
+    <label for="emailContent">Email to Reply To</label>
+    <textarea id="emailContent" placeholder="Paste the email here..."></textarea>
+
+    <label for="tone">Tone</label>
+    <select id="tone">
+        <option value="professional">Professional</option>
+        <option value="friendly">Friendly</option>
+        <option value="formal">Formal</option>
+        <option value="concise">Concise</option>
+    </select>
+
+    <button id="generateBtn">Generate Reply</button>
+
+    <div id="loading" class="hidden">Generating...</div>
+
+    <h2>Generated Reply</h2>
+    <div id="responseBox"></div>
+
+    <div id="errorBox" class="error hidden"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
